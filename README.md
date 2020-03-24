@@ -2,7 +2,15 @@
 Locate MAC position using hashC API
 
 ## Configuration
-Edit locate_mac.py by setting your hashC_APIKEY 
+### Setting hashC_APIKEY
+After getting your api key from hashC (via [website](https://hashc.co.uk/) or [email](mailto:support@hashc.co.uk))
+Open your command window / terminal and execute:
+#### For Linux
+`export hashC_APIKEY=YOUR_APIKEY_HERE`
+#### For Mac
+`export hashC_APIKEY=YOUR_APIKEY_HERE`
+#### For Windows
+`set hashC_APIKEY=YOUR_APIKEY_HERE`
 
 ## Usage
 `Usage: python3 locate_mac.py <MAC>`

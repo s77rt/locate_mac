@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-###### User Configurations #####
-# the api key below is temporarily, contact support@hashc.co.uk to get yours
-hashC_APIKEY = "TESTxQfS8hIKcALYZIfYz14IYGxbWQbJ0mKLFE7e0hIbIIt4J3K7Ce5Xcdshqngr"
-################################
-
 __author__ = "Abdelhafidh Belalia (s77rt)"
 __license__ = "MIT"
 __maintainer__ = "Abdelhafidh Belalia (s77rt)"
@@ -13,9 +8,19 @@ __email__ = "admin@abdelhafidh.com"
 __version__ = "0.1.1"
 __github__ = "https://github.com/s77rt/locate_mac/"
 
+import os
 import sys
 import re
 import requests
+
+###### User Configurations #####
+""" The api key below is temporarily
+Get your api key from https://hashc.co.uk/
+Or contact support@hashc.co.uk
+IMPORTANT: DO NOT change the api key below, instead use an environment variable
+"""
+hashC_APIKEY = os.environ.get('hashC_APIKEY', 'TESTxQfS8hIKcALYZIfYz14IYGxbWQbJ0mKLFE7e0hIbIIt4J3K7Ce5Xcdshqngr')
+################################
 
 class MAC_GEO_LOOKUP(object):
 	def __init__(self):
